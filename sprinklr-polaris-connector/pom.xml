@@ -101,8 +101,9 @@
                             <configOptions>
                                 <!--suppress UnresolvedMavenProperty -->
                                 <library>jersey2</library>
-                                <basePackage>com.adobe.polarissearch</basePackage>
-                                <modelPackage>com.adobe.polarissearch.models</modelPackage>
+                                <basePackage>com.adobe.polaris.search</basePackage>
+                                <modelPackage>com.adobe.polaris.search.models</modelPackage>
+                                <apiPackage>com.adobe.polaris.search.api</apiPackage>
                                 <sourceFolder>src/gen/main/java</sourceFolder>
                                 <useRuntimeException>true</useRuntimeException>
                                 <hideGenerationTimestamp>true</hideGenerationTimestamp>
