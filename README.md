@@ -1,4 +1,4 @@
-# sprinklr-polaris-connector-poc
+# Sprinklr - Polaris Adapter Layer - POC
 ## Folder setup
 (wrt t this git repo, `swagger-codegen/Search/`)
 - assets-search.yaml
