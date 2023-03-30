@@ -1,4 +1,7 @@
 # Sprinklr - Polaris Adapter Layer - POC
+## Pre-requisites
+* swagger-codegen installed. Follow steps mentioned here - https://swagger.io/docs/open-source-tools/swagger-codegen/
+* Java 11 installed
 ## Folder setup
 (wrt t this git repo, `swagger-codegen/Search/`)
 - assets-search.yaml
@@ -19,8 +22,6 @@
             │   └── resources
 ```
 
-            
-
 
 ## Steps
 1. Java-Client folder should be empty.
@@ -39,3 +40,9 @@
 5. Compile
 > mvn clean install
 6. Go to consumers folder -> Polaris-Search-Swagger-Java-Client-Consumer -> run the file ConsumerMainSwaggerPolarisSearch.java (has the `main` method)
+
+## (Alternatively, for API Client generation) Steps to generate API Client using Swagger Editor - Web Interface
+1. Go to https://editor.swagger.io/
+2. Paste in the API Specification in the left panel
+3. Verify successful render of the API specification in the right panel
+4. Go to menu item -> Generate client -> choose language (as shown in the screenshot below). Having chosing the language and the name of the artifact, the zip is downloaded to your local machine.
