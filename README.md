@@ -1,5 +1,6 @@
 # sprinklr-polaris-connector-poc
 ## Folder setup
+(wrt t this git repo, `swagger-codegen/Search/`)
 - assets-search.yaml
 - (empty folder) Java-Client
 - consumers -> containing maven project to leverage Java-Client (auto-generated) to connect to Polaris SearchRequest. (Sync with artifact in git)
