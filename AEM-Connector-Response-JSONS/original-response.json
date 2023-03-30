@@ -1,0 +1,159 @@
+{
+    "assets": [
+        {
+            "jcr:created": {
+                "year": 2023,
+                "month": 2,
+                "dayOfMonth": 9,
+                "hourOfDay": 11,
+                "minute": 42,
+                "second": 21
+            },
+            "jcr:mixinTypes": [
+                "mix:referenceable"
+            ],
+            "jcr:content": {
+                "jcr:lastModifiedBy": "Olympe.Kassa1@contracted.pmi.com",
+                "jcr:lastModified": {
+                    "year": 2023,
+                    "month": 2,
+                    "dayOfMonth": 9,
+                    "hourOfDay": 11,
+                    "minute": 42,
+                    "second": 38
+                },
+                "dam:processingRenditions": [
+                    "cq5dam.web.1280.1280.jpeg",
+                    "cqdam.metadata.xml",
+                    "cq5dam.zoom.2048.2048.jpeg",
+                    "cq5dam.thumbnail.319.319.png",
+                    "cqdam.machine.metadata.tags.json",
+                    "cqdam.text.txt",
+                    "cq5dam.thumbnail.140.100.png",
+                    "cqdam.machine.metadata.features.json",
+                    "cqdam.machine.metadata.colors.json",
+                    "cq5dam.thumbnail.48.48.png",
+                    "cq5dam.preview.pdf"
+                ],
+                "dam:jobId": "bc9321ff-23dc-47ee-bb89-7f168d49028f",
+                "jcr:primaryType": "dam:AssetContent",
+                "dam:processingRequestedDate": {
+                    "year": 2023,
+                    "month": 2,
+                    "dayOfMonth": 9,
+                    "hourOfDay": 11,
+                    "minute": 42,
+                    "second": 21
+                },
+                "dam:processingId": "cb58af20-00e7-4acc-b4ea-5246ef19d79a",
+                "dam:assetState": "processed",
+                "dam:runPostProcess": true
+            },
+            "jcr:createdBy": "Olympe.Kassa1@contracted.pmi.com",
+            "jcr:content/metadata": {
+                "dam:Bitsperpixel": 24,
+                "dc:description": "test of the API",
+                "dam:MIMEtype": "image/jpeg",
+                "dam:Numberoftextualcomments": 0,
+                "dam:Physicalheightininches": 72,
+                "dam:Physicalwidthininches": 54,
+                "tiff:ImageLength": 5184,
+                "dc:format": "image/jpeg",
+                "dam:Physicalheightindpi": 72,
+                "dc:title": "strawberries",
+                "dam:Numberofimages": 1,
+                "dam:extracted": {
+                    "year": 2023,
+                    "month": 2,
+                    "dayOfMonth": 9,
+                    "hourOfDay": 11,
+                    "minute": 42,
+                    "second": 31
+                },
+                "dam:Physicalwidthindpi": 72,
+                "cq:tags": [
+                    "fruits",
+                    "sprinklr",
+                    "aem"
+                ],
+                "dam:Progressive": "yes",
+                "dam:status": "approved",
+                "dam:Fileformat": "JPEG",
+                "dam:size": 2303909,
+                "dam:predictedColors": [
+                    15048,
+                    14027,
+                    27009,
+                    23008,
+                    37008
+                ],
+                "jcr:mixinTypes": [
+                    "cq:Taggable"
+                ],
+                "dam:sha1": "8af9632bfbf652144f1117e56c275f996f48e121",
+                "jcr:primaryType": "nt:unstructured",
+                "tiff:ImageWidth": 3888
+            },
+            "jcr:uuid": "f6f12f26-8805-4bdd-975c-96b75efb36f1",
+            "jcr:primaryType": "dam:Asset",
+            "renditions": [
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cq5dam.thumbnail.140.100.png",
+                    "name": "cq5dam.thumbnail.140.100.png"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png",
+                    "name": "cq5dam.thumbnail.319.319.png"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cq5dam.thumbnail.48.48.png",
+                    "name": "cq5dam.thumbnail.48.48.png"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+                    "name": "cq5dam.web.1280.1280.jpeg"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cq5dam.zoom.2048.2048.jpeg",
+                    "name": "cq5dam.zoom.2048.2048.jpeg"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cqdam.machine.metadata.colors.json",
+                    "name": "cqdam.machine.metadata.colors.json"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cqdam.machine.metadata.features.json",
+                    "name": "cqdam.machine.metadata.features.json"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cqdam.machine.metadata.tags.json",
+                    "name": "cqdam.machine.metadata.tags.json"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/cqdam.metadata.xml",
+                    "name": "cqdam.metadata.xml"
+                },
+                {
+                    "path": "/content/dam/damConnector/pexels-lisa-fotios-15859227.jpg/jcr:content/renditions/original",
+                    "name": "original"
+                }
+            ]
+        }
+    ],
+    "facets": {
+        "jcr:content/dam:assetState": [
+            {
+                "count": 1,
+                "value": "processed"
+            }
+        ],
+        "jcr:content/metadata/dc:title": [
+            {
+                "count": 1,
+                "value": "strawberries"
+            }
+        ]
+    },
+    "count": 1,
+    "hasMore": false
+}

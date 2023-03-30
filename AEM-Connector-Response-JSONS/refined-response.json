@@ -1,0 +1,79 @@
+{
+    "assets": [
+        {
+            "jcr:created": {
+                "year": 2023,
+                "month": 2,
+                "dayOfMonth": 9,
+                "hourOfDay": 11,
+                "minute": 42,
+                "second": 21
+            },
+            "jcr:content": {
+                "jcr:lastModifiedBy": "Olympe.Kassa1@contracted.pmi.com",
+                "jcr:lastModified": {
+                    "year": 2023,
+                    "month": 2,
+                    "dayOfMonth": 9,
+                    "hourOfDay": 11,
+                    "minute": 42,
+                    "second": 38
+                },
+                "dam:processingRenditions": [
+                    "cq5dam.web.1280.1280.jpeg",
+                    "cq5dam.zoom.2048.2048.jpeg",
+                    "cq5dam.thumbnail.319.319.png",
+                    "cq5dam.thumbnail.140.100.png",
+                    "cq5dam.thumbnail.48.48.png"
+                ],
+                "jcr:primaryType": "dam:Asset",
+                "dam:size": 2303909,
+                "dam:assetState": "approved"
+            },
+            "jcr:createdBy": "Olympe.Kassa1@contracted.pmi.com",
+            "jcr:content/metadata": {
+                "dc:description": "test of the API",
+                "dam:Fileformat": "JPEG",
+                "dam:MIMEtype": "image/jpeg",
+                "tiff:ImageLength": 5184,
+                "dc:format": "image/jpeg",
+                "dc:title": "strawberries",
+                "dam:status": "approved",
+                "tiff:ImageWidth": 3888,
+                "dc:language": "en",
+                "cq:tags": [
+                    "fruits",
+                    "sprinklr",
+                    "aem"
+                ],
+                "prism:expirationDate": "2023-05-01T04:48:00.000Z"
+            },
+            "jcr:uuid": "f6f12f26-8805-4bdd-975c-96b75efb36f1",
+            "jcr:primaryType": "dam:Asset",
+            "renditions": [
+                {
+                    "path": "https://delivery-pXX-eYY.adobeaemcloud.com/adobe/dynamicmedia/deliver/urn:aaid:aem:f6f12f26-8805-4bdd-975c-96b75efb36f1/pexels-lisa-fotios-15859227.jpg?width=100&height=100&preferwebp=true",
+                    "name": "cq5dam.thumbnail.140.100.png"
+                },
+                {
+                    "path": "https://delivery-pXX-eYY.adobeaemcloud.com/adobe/dynamicmedia/deliver/urn:aaid:aem:f6f12f26-8805-4bdd-975c-96b75efb36f1/pexels-lisa-fotios-15859227.jpg?width=319&height=319&preferwebp=true",
+                    "name": "cq5dam.thumbnail.319.319.png"
+                },
+                {
+                    "path": "https://delivery-pXX-eYY.adobeaemcloud.com/adobe/dynamicmedia/deliver/urn:aaid:aem:f6f12f26-8805-4bdd-975c-96b75efb36f1/pexels-lisa-fotios-15859227.jpg?width=48&height=48&preferwebp=true",
+                    "name": "cq5dam.thumbnail.48.48.png"
+                },
+                {
+                    "path": "https://delivery-pXX-eYY.adobeaemcloud.com/adobe/dynamicmedia/deliver/urn:aaid:aem:f6f12f26-8805-4bdd-975c-96b75efb36f1/pexels-lisa-fotios-15859227.jpg?width=1280&height=1280&preferwebp=true",
+                    "name": "cq5dam.web.1280.1280.jpeg"
+                },
+                {
+                    "path": "https://delivery-pXX-eYY.adobeaemcloud.com/adobe/dynamicmedia/deliver/urn:aaid:aem:f6f12f26-8805-4bdd-975c-96b75efb36f1/pexels-lisa-fotios-15859227.jpg?width=2048&height=2048&preferwebp=true",
+                    "name": "cq5dam.zoom.2048.2048.jpeg"
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "hasMore": false
+}
