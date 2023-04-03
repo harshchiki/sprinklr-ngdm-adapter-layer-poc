@@ -18,6 +18,43 @@ public class PolarisSearchAPIClientConsumer {
     private final static String CONTENT_TYPE_APPLICATION_JSON = "application/json";
     private final static String MATCH_TEXT = "sprintdemo";
 
+    public SearchResponse call(final SearchRequest polarisSearchRequest) {
+        final ActivatedAssetsSearchApi apiInstance = new ActivatedAssetsSearchApi();
+
+        final ApiClient apiClient = apiInstance.getApiClient();
+        apiClient.setBasePath(POLARIS_DELIVERY_TIER);
+        apiClient.setApiKey(POLARIS_SEARCH_SERVICE_API_KEY);
+//        apiClient.setAccessToken(token);
+        apiClient.selectHeaderContentType(new String[] { CONTENT_TYPE_APPLICATION_JSON });
+
+
+        final MatchQueryMatch matchQuerymatch = new MatchQueryMatch();
+        matchQuerymatch.text(MATCH_TEXT);
+
+        final MatchQuery matchQuery = new MatchQuery();
+        matchQuery.match(matchQuerymatch);
+
+        final List<CompositeQuery> queryItems = new ArrayList<>();
+        queryItems.add(matchQuery);
+
+        SearchRequest request = new SearchRequest();
+        request.query(queryItems);
+
+        request.limit(50);
+        request.offset(Integer.valueOf(0));
+
+
+        try {
+            SearchResponse result = apiInstance.search(request);
+            System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result));
+            return result;
+        } catch (Exception e) {
+            System.err.println("Exception when calling ActivatedAssetsSearchApi#search");
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     public void consume(final String token) {
         System.out.println("Consumer Main Swagger Polaris Search");
         System.out.println(System.getProperty("java.class.path"));

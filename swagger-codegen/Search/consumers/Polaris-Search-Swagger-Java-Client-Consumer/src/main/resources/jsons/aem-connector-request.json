@@ -1,0 +1,34 @@
+{
+  "facets":[
+    "jcr:content/metadata/dc:language",
+    "jcr:content/metadata/dc:title",
+    "jcr:content/dam:assetState"
+  ],
+  "q":"strawberries",
+  "filter":{
+    "type":"AND",
+    "filters":[
+
+      {
+        "type":"IN",
+        "key":"jcr:content/metadata/dc:format",
+        "values":[
+          "image/jpeg",
+          "image/gif",
+          "image/png",
+          "image/tiff"
+        ]
+      }
+    ]
+  },
+  "sorts":[
+    {
+      "key":"jcr:created",
+      "order":"DESC"
+    }
+  ],
+  "page":{
+    "size":40,
+    "cursor":"0"
+  }
+}
