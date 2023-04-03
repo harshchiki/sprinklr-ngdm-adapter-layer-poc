@@ -25,6 +25,7 @@ hs_err_pid*
 # IntelliJ
 .idea
 .ideaproject
+.idea/
 
 .settings
 .metadata
@@ -33,3 +34,4 @@ maven-eclipse.xml
 .vscode
 
 target
+.DS_Store
