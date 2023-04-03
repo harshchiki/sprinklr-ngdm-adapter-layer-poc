@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Polaris-Search-Swagger-Java-Client-Consumer" />
         <module name="Java-Client-Consumer" />
       </profile>
     </annotationProcessing>
