@@ -2,14 +2,14 @@ package consumer;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.adobe.polarissearch.ApiClient;
+import com.adobe.polarissearch.models.CompositeQuery;
+import com.adobe.polarissearch.models.MatchQuery;
+import com.adobe.polarissearch.models.MatchQueryMatch;
+import com.adobe.polarissearch.models.SearchRequest;
+import com.adobe.polarissearch.models.SearchResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.swagger.client.ApiClient;
 import io.swagger.client.api.ActivatedAssetsSearchApi;
-import io.swagger.client.model.CompositeQuery;
-import io.swagger.client.model.MatchQuery;
-import io.swagger.client.model.MatchQueryMatch;
-import io.swagger.client.model.SearchRequest;
-import io.swagger.client.model.SearchResponse;
 
 public class PolarisSearchAPIClientConsumer {
     private final static ObjectMapper mapper = new ObjectMapper();
