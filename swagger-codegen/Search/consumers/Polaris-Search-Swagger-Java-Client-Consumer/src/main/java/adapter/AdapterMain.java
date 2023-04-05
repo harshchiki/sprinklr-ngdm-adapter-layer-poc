@@ -52,6 +52,7 @@ public class AdapterMain {
         System.out.println("Printing translated AEM Connector Response");
         System.out.println(mapper.writerWithDefaultPrettyPrinter()
             .writeValueAsString(aemConnectorSearchResponse));
+        System.out.println("END: Printed AEM Connector Response JSON");
     }
 
     private String getString(final InputStream is) throws IOException {

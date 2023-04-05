@@ -14,8 +14,9 @@ import io.swagger.client.model.SearchRequest;
 import io.swagger.client.model.SearchResponse;
 
 public class PolarisSearchAPIClientConsumer {
+    public final static String POLARIS_DELIVERY_TIER = "https://delivery-p47604-e144858-cmstg.adobeaemcloud.com";
     private final static ObjectMapper mapper = new ObjectMapper();
-    private final static String POLARIS_DELIVERY_TIER = "https://delivery-p47604-e144858-cmstg.adobeaemcloud.com";
+
     private final static String POLARIS_SEARCH_SERVICE_API_KEY = "polaris-asset-search-api-key";
     private final static String CONTENT_TYPE_APPLICATION_JSON = "application/json";
     private final static String MATCH_TEXT = "sprintdemo";
