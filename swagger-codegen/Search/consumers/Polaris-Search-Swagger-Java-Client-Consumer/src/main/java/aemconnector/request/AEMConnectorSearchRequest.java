@@ -15,12 +15,12 @@ public class AEMConnectorSearchRequest
     @Getter
     @Setter
     @JsonProperty("filter")
-    AEMConnectorSearchRequestFilter AEMConnectorSearchRequestFilter;
+    AEMConnectorSearchRequestFilter aemConnectorSearchRequestFilter;
 
     @Getter
     @Setter
     @JsonProperty("sorts")
-    List<AEMConnectorSearchRequestSort> AEMConnectorSearchRequestSorts;
+    List<AEMConnectorSearchRequestSort> aemConnectorSearchRequestSorts;
 
     @Getter
     @Setter
