@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ConsumerMainSwaggerPolarisSearch</mainClass>
+                            <mainClass>adapter.PolarisAdapterController</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

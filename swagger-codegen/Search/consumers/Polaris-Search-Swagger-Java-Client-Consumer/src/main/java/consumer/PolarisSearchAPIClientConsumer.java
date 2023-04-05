@@ -32,8 +32,6 @@ public class PolarisSearchAPIClientConsumer {
 
         try {
             SearchResponse result = apiInstance.search(polarisSearchRequest);
-            System.out.println("Printing the Polaris Search Response");
-            System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result));
             return result;
         } catch (Exception e) {
             System.err.println("Exception when calling ActivatedAssetsSearchApi#search");

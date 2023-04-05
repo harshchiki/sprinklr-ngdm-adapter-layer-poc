@@ -1,4 +1,4 @@
-package aemconnector.translators;
+package translators;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,11 +29,6 @@ public class PolarisSearchResponseToAEMConnectorResponse {
      */
     public AEMConnectorSearchResponse translateFrom(final SearchResponse polarisSearchResponse,
                                                     final int searchCountLimit) throws IOException {
-
-        String aemConnectorResponseJson = this.getString(PolarisSearchResponseToAEMConnectorResponse.class.getClassLoader()
-            .getResourceAsStream("jsons/aem-connector-response.json"));
-        final AEMConnectorSearchResponse aemConnectorSearchResponseFile
-            = new ObjectMapper().readValue(aemConnectorResponseJson, AEMConnectorSearchResponse.class);
 
         final AEMConnectorSearchResponse aemConnectorSearchResponse = new AEMConnectorSearchResponse();
 
@@ -69,6 +64,8 @@ public class PolarisSearchResponseToAEMConnectorResponse {
                 put("minute", Integer.valueOf(createdDateTime.getMinute()));
                 put("second", Integer.valueOf(createdDateTime.getSecond()));
             }});
+
+            // jcr:createdBy and jcr:modifiedBy - TODO
 
             // jcr:content
             final String modifiedDateStr = repositoryMetadata.get("repo:modifyDate").toString();
@@ -139,27 +136,8 @@ public class PolarisSearchResponseToAEMConnectorResponse {
         }
         aemConnectorSearchResponse.setAssets(aemConnectorSearchResponseAssets);
 
-
-        // facets
+        // facets - TODO
         return aemConnectorSearchResponse;
-
-//        final AEMConnectorSearchResponse aemConnectorSearchResponse = new AEMConnectorSearchResponse();
-//
-//        // count and hasMore
-//        int searchHitsCount = polarisSearchResponse.getSearchMetadata().getCount().intValue();
-//        if(searchHitsCount > searchCountLimit) {
-//            aemConnectorSearchResponse.setCount(Long.valueOf(searchHitsCount));
-//            aemConnectorSearchResponse.setHasMore(true);
-//        } else {
-//            aemConnectorSearchResponse.setHasMore(false);
-//        }
-//
-//
-//        for(int i = 0; i < (searchHitsCount <= searchCountLimit ? searchHitsCount : searchCountLimit); i++) {
-//            final Asset asset = polarisSearchResponse.getHits().getResults().get(i);
-//        }
-//
-//        return null;
     }
 
     private void setCountAndHasMore(SearchResponse polarisSearchResponse, int searchCountLimit, AEMConnectorSearchResponse aemConnectorSearchResponse) {

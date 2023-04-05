@@ -1,4 +1,4 @@
-package aemconnector.translators;
+package translators;
 
 import aemconnector.request.AEMConnectorSearchRequest;
 import aemconnector.request.AEMConnectorSearchRequestPage;
