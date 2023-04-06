@@ -67,4 +67,5 @@
 
 ## Steps to run the consumer - Polaris Adapter
 1. update `PolarisAdapterController.java` (refer the tree structure above. the file is part of the consumer code) - member `IMS_TOKEN` with a valid IMS Token (without "Bearer" string)
-2. run `PolarisAdapterController.java` from the IDE. (It has the `main` method, which reads the AEM Connector Search Request from `src/main/resources/jsons/aem-connector-request.json`, wrt consumer project `consumers/Polaris-Search-Seagger-Java-Client-Consumer`)
+2. Update the (AEM Connector) Search request json, kept here - `swagger-codegen/Search/consumers/Polaris-Search-Swagger-Java-Client-Consumer/src/main/resources/jsons/aem-connector-request.json`
+3. run `PolarisAdapterController.java` from the IDE. (It has the `main` method, which reads the AEM Connector Search Request from `src/main/resources/jsons/aem-connector-request.json`, wrt consumer project `consumers/Polaris-Search-Seagger-Java-Client-Consumer`)
