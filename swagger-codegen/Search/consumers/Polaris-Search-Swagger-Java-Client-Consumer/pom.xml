@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>adapter.PolarisAdapterController</mainClass>
+                            <mainClass>adapter.PolarisAdapterMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

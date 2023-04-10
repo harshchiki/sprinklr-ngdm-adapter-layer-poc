@@ -17,7 +17,7 @@ import io.swagger.client.ApiException;
 import io.swagger.client.model.SearchRequest;
 import io.swagger.client.model.SearchResponse;
 
-public class PolarisAdapterController {
+public class PolarisAdapterMain {
     private final static String IMS_TOKEN = "eyJhbGciOiJSUzI1NiIsIng1dSI6Imltc19uYTEtc3RnMS1rZXktYXQtMS5jZXIiLCJraWQiOiJpbXNfbmExLXN0ZzEta2V5LWF0LTEiLCJpdHQiOiJhdCJ9.eyJpZCI6IjE2ODA2NjgyNDQ4NDZfYjU1NmM2ZWItZWYyYi00YzYzLWI3YzctMzJjOTIxOTllODkwX3VlMSIsInR5cGUiOiJhY2Nlc3NfdG9rZW4iLCJjbGllbnRfaWQiOiJ0ZXN0X3BvbGFyaXNfYXMiLCJ1c2VyX2lkIjoiOEY5NDBCOTg1Q0Q0NDlERjBBNDk0MjFDQGM2MmYyNGNjNWI1YjdlMGUwYTQ5NDAwNCIsInN0YXRlIjoie1wianNsaWJ2ZXJcIjpcInYyLXYwLjMxLjAtMi1nMWU4YThhOFwiLFwibm9uY2VcIjpcIjM4NzAxNTk5NjYxNzk5MzhcIixcImltc2xpYm1vZGFsXCI6dHJ1ZX0iLCJhcyI6Imltcy1uYTEtc3RnMSIsImFhX2lkIjoiOEY5NDBCOTg1Q0Q0NDlERjBBNDk0MjFDQGM2MmYyNGNjNWI1YjdlMGUwYTQ5NDAwNCIsImN0cCI6MCwiZmciOiJYS1VXRDZSNDZSN1hDNERKN0daTUEyWUFJUT09PT09PSIsInNpZCI6IjE2ODA2Mjg5Mjg1MTZfYmNhZjIyOGUtZTc4YS00MmRjLWIxYjItOTMyODU4ZDU0OTFhX3VlMSIsIm1vaSI6IjU3ODZjMWY4IiwicGJhIjoiT1JHLE1lZFNlY05vRVYsTG93U2VjIiwiZXhwaXJlc19pbiI6IjI4Nzk3MTU0IiwiY3JlYXRlZF9hdCI6IjE2ODA2NjgyNDQ4NDYiLCJzY29wZSI6ImFkZGl0aW9uYWxfaW5mby5wcm9qZWN0ZWRQcm9kdWN0Q29udGV4dCxvcGVuaWQscmVhZF9vcmdhbml6YXRpb25zLEFkb2JlSUQifQ.JGE6TjDC_SS87KViFEqiII1840TY8r1DyFqGXB0DNqq9KR2FfG3TRhZvx4uVtRoM0e98RQ4sVE1qiFopbXoDTx9Mh0FftiQunsqBrV9MfTIJ3dzha6E2Vi0ot1pkDKh12IQVgQ6OCoZ13UXz3jJn65eV97LnjtGg-PJLDuaOVe2z_GmhUuqBLGF2IAbClHfJaTXmkDCV74BWY-rYNybfMHnuRHoJlZOb3dVHiWnswCoh7ifPT-xDQBGUV7theY3VwA5NkMR67NzpRcct8644yv3yxgkoG0ynQmPJXe97jd-f_pRHN3NlR8jY7PGAU2uXsqViqd9c-6iniWo8p6tXAQ";
     private final static int LIMIT = 40;
 
@@ -28,10 +28,10 @@ public class PolarisAdapterController {
         = new PolarisSearchAPIClientConsumer();
 
     public static void main(String[] args) throws IOException, ApiException {
-        PolarisAdapterController polarisAdapterController = new PolarisAdapterController();
+        PolarisAdapterMain polarisAdapterController = new PolarisAdapterMain();
 
         // construct AEMConnectorSearchRequest from aemConnReqJsonStr
-        String aemConnectedRequestJson = polarisAdapterController.getString(PolarisAdapterController.class.getClassLoader()
+        String aemConnectedRequestJson = polarisAdapterController.getString(PolarisAdapterMain.class.getClassLoader()
             .getResourceAsStream("jsons/aem-connector-request.json"));
         AEMConnectorSearchRequest aemConnectorSearchRequest
             = mapper.readValue(aemConnectedRequestJson, AEMConnectorSearchRequest.class);
