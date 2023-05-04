@@ -1,4 +1,4 @@
-# Sprinklr - Polaris Adapter Layer - POC
+# Sprinklr - Next Generation Dynamic Media Adapter Layer (NGDM) - POC
 ## Pre-requisites
 * swagger-codegen installed. Follow steps mentioned here - https://swagger.io/docs/open-source-tools/swagger-codegen/
 * Java 11 installed
@@ -6,7 +6,7 @@
 (wrt t this git repo, `swagger-codegen/Search/`)
 - assets-search.yaml
 - (empty folder) Java-Client
-- consumers -> containing maven project to leverage Java-Client (auto-generated) to connect to Polaris SearchRequest. (Sync with artifact in git)
+- consumers -> containing maven project to leverage Java-Client (auto-generated) to connect to NGDM SearchRequest. (Sync with artifact in git)
 
 ```
 |-- Java-Client
@@ -65,7 +65,7 @@
 3. Verify successful render of the API specification in the right panel
 4. Go to menu item -> Generate client -> choose language (as shown in the screenshot below). Having chosing the language and the name of the artifact, the zip is downloaded to your local machine.
 
-## Steps to run the consumer - Polaris Adapter
+## Steps to run the consumer - NGDM Adapter
 1. update `PolarisAdapterController.java` (refer the tree structure above. the file is part of the consumer code) - member `IMS_TOKEN` with a valid IMS Token (without "Bearer" string)
 2. Update the (AEM Connector) Search request json, kept here - `swagger-codegen/Search/consumers/Polaris-Search-Swagger-Java-Client-Consumer/src/main/resources/jsons/aem-connector-request.json`
 3. run `PolarisAdapterController.java` from the IDE. (It has the `main` method, which reads the AEM Connector Search Request from `src/main/resources/jsons/aem-connector-request.json`, wrt consumer project `consumers/Polaris-Search-Seagger-Java-Client-Consumer`)
